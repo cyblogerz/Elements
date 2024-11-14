@@ -1,7 +1,8 @@
+// elements/models/database_model.dart
 class Habit {
   final int? id;
-  final String name;
-  final String description;
+  final String name; // habit
+  final String description; // time/location and identity
   bool isCompleted;
 
   Habit({

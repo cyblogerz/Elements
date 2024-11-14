@@ -1,6 +1,7 @@
+// elements/providers/habit_provider.dart
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:elements/database_helper.dart';
 import 'package:elements/models/database_model.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final habitProvider = StateNotifierProvider<HabitNotifier, List<Habit>>((ref) {
   return HabitNotifier();

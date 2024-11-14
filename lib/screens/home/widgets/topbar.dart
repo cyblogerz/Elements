@@ -1,3 +1,4 @@
+import 'package:elements/screens/habit/habit_definition_screen.dart';
 import 'package:elements/screens/home/widgets/habit_option.dart';
 import 'package:flutter/material.dart';
 
@@ -92,6 +93,10 @@ class TopBar extends StatelessWidget {
                         "Start a new habit that will have remarkable results.",
                     onTap: () {
                       // Navigate to create habit screen
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => HabitDefinitionScreen()));
                     },
                   ),
                   SizedBox(height: 10),
