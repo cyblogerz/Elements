@@ -30,17 +30,17 @@ class HabitTile extends StatelessWidget {
         children: [
           // Icon and completion count
           Container(
-            padding: EdgeInsets.all(8),
+            padding: EdgeInsets.symmetric(horizontal: 18, vertical: 10),
             decoration: BoxDecoration(
               color:
                   habit.isCompleted ? Colors.orange : Colors.deepOrangeAccent,
-              shape: BoxShape.circle,
+              borderRadius: BorderRadius.circular(
+                  20), // Higher radius for squircle effect
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.bolt, color: Colors.white),
-                SizedBox(height: 4),
                 Text(
                   habit.isCompleted ? '1' : '0',
                   style: TextStyle(color: Colors.white),
